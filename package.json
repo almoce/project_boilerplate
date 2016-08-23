@@ -1,0 +1,14 @@
+{
+  "name": "project_template",
+  "version": "1.0.0",
+  "description": "inicial project template",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "wence",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.14.0"
+  }
+}
