@@ -9,15 +9,15 @@
     js.js
 ```
 
-### install
+### Install
 ```sh
 $ npm install
 ```
-### start serve
+### Start serve
 ```sh
 $ node app.js
 ```
-### gulp - watch file change with live reload
+### Gulp - Watch file change with live reload
 ```sh
 $ gulp
 ```
