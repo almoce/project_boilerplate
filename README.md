@@ -17,10 +17,21 @@ $ npm install
 ```sh
 $ node app.js
 ```
-### Gulp - Watch file change with live reload
+### Gulp
+
+##### Watch file change with live reload
 ```sh
 $ gulp
 ```
 
+##### Build the production js and cs
+```sh
+$ gulp build
+```
+
+
 - livereload
 - less
+- autoprefix & minify
+- babel
+- uglify
