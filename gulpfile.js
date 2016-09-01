@@ -50,10 +50,18 @@ gulp.task('uglify', ['concat'], function(callback) {
      .pipe(gulp.dest('./app'));
 })
 
+gulp.task('html', function() {
+    return gulp.src([
+        './app/*.html'
+    ])
+    .pipe(livereload());
+});
+
 gulp.task('build', ['uglify', 'minify']);
 
 gulp.task('default', function() {
     livereload.listen();
     gulp.watch('./app/javascript/*.js', ['concat']);
     gulp.watch('./app/less/*.less', ['less']);
+    gulp.watch('./app/*.html', ['html']);
 });
