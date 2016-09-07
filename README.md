@@ -1,25 +1,23 @@
 # project_boilerplate
 
 ```
-/app
-    /javascript
-    /less
-    index.html
-    css.css
-    js.js
+/project_template
+	/app
+	    /javascript
+	    /less
+	    index.html
+	    css.css
+	    js.js
 ```
 
 ### Install
 ```sh
 $ npm install
 ```
-### Start serve
-```sh
-$ node app.js
-```
+
 ### Gulp
 
-##### Watch file change with live reload
+##### Watch file change with live reload and serve
 ```sh
 $ gulp
 ```
@@ -29,7 +27,14 @@ $ gulp
 $ gulp build
 ```
 
+##### Alternative start serve with node
 
+```sh
+$ node app.js
+```
+
+- nodejs
+- gulpserve
 - livereload
 - less
 - autoprefix & minify

@@ -59,9 +59,12 @@ gulp.task('html', function() {
 
 gulp.task('build', ['uglify', 'minify']);
 
-gulp.task('default', function() {
+gulp.task('serve', serve('app'));
+
+gulp.task('default', ['serve'], function() {
     livereload.listen();
     gulp.watch('./app/javascript/*.js', ['concat']);
     gulp.watch('./app/less/*.less', ['less']);
     gulp.watch('./app/*.html', ['html']);
 });
+
