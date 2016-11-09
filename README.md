@@ -5,11 +5,11 @@
 	/app
 	    /javascript
 	    /less
-	    index.html
-	    css.css
-	    js.js
+	    /public
+		    index.html
+		    css.css
+		    js.js
 ```
-
 ### Install
 ```sh
 $ npm install
