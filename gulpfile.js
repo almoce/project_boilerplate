@@ -36,14 +36,14 @@ gulp.task('concat', function(callback) {
         .pipe(livereload());
 })
 gulp.task('minify', ['less'], function(callback) {
-    return gulp.src('./app/css.css')
+    return gulp.src('./app/public/css.css')
         .pipe(less({
             plugins: [cleanCSSPlugin]
         }))
         .pipe(gulp.dest('./app/public'));
 });
 gulp.task('uglify', ['concat'], function(callback) {
-     return gulp.src('./app/js.js')
+     return gulp.src('./app/public/js.js')
      .pipe(babel({
         presets:['es2015']
      }))
