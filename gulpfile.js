@@ -30,7 +30,7 @@ gulp.task('less', function(callback) {
         .pipe(livereload());
 });
 gulp.task('concat', function(callback) {
-    return gulp.src('./app/javascript/*.js')
+    return gulp.src(['./app/javascript/lib/*.js','./app/javascript/src/*.js'])
         .pipe(concat('js.js'))
         .pipe(gulp.dest('./app/public'))
         .pipe(livereload());

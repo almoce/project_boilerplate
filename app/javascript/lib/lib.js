@@ -1,0 +1,1 @@
+console.log("library js file in this folder");

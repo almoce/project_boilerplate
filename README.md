@@ -4,6 +4,8 @@
 /project_template
 	/app
 	    /javascript
+	    	/lib
+	    	/src
 	    /less
 	    /public
 		    index.html
