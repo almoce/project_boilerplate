@@ -64,7 +64,7 @@ gulp.task('serve', serve('app/public'));
 
 gulp.task('default', ['serve'], function() {
     livereload.listen();
-    gulp.watch('./app/javascript/*.js', ['concat']);
+    gulp.watch(['./app/javascript/lib/*.js','./app/javascript/src/*.js'], ['concat']);
     gulp.watch('./app/less/*.less', ['less']);
     gulp.watch('./app/public/*.html', ['html']);
 });
